@@ -1,0 +1,6 @@
+{
+  "name": "MemoryChat",
+  "description": "A minimal full-stack AI chatbot powered by Google Gemini and Hindsight persistent memory layer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

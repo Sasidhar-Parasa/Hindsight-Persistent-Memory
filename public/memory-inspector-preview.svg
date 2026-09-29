@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <filter id="shadow2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg2)" />
+
+  <!-- Header -->
+  <text x="60" y="55" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2">PERSISTENT MEMORY IN ACTION</text>
+  <text x="60" y="88" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="26" font-weight="800">Clean Slate UI vs Instant Memory Recall</text>
+
+  <!-- Left: The Clean Slate Chat UI -->
+  <g transform="translate(60, 120)" filter="url(#shadow2)">
+    <rect width="520" height="430" rx="16" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <rect width="520" height="50" rx="16" fill="#1e293b" />
+    <circle cx="28" cy="25" r="5" fill="#ef4444" />
+    <circle cx="44" cy="25" r="5" fill="#f59e0b" />
+    <circle cx="60" cy="25" r="5" fill="#10b981" />
+    <text x="140" y="30" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="13" font-weight="700">MemoryChat Interface</text>
+    <rect x="390" y="12" width="110" height="26" rx="13" fill="#3b82f6" />
+    <text x="445" y="29" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">+ New Chat</text>
+
+    <!-- Empty/Cleared notice -->
+    <rect x="25" y="75" width="470" height="40" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.4" />
+    <text x="40" y="100" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="12">ℹ️ Screen cleared. Context window has 0 message tokens.</text>
+
+    <!-- User Query -->
+    <g transform="translate(180, 135)">
+      <rect width="315" height="50" rx="12" fill="#2563eb" />
+      <text x="16" y="24" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">"What should I learn next?"</text>
+      <text x="16" y="42" fill="#bfdbfe" font-family="system-ui, sans-serif" font-size="11">Adi (Session #2, completely empty chat)</text>
+    </g>
+
+    <!-- Assistant Response with Recall Badge -->
+    <g transform="translate(25, 205)">
+      <rect width="470" height="150" rx="12" fill="#1e293b" stroke="#334155" />
+      
+      <!-- Recall Pill -->
+      <rect x="16" y="14" width="220" height="24" rx="12" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4" />
+      <text x="26" y="30" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="700">⚡ RECALLED FROM HINDSIGHT</text>
+      
+      <text x="16" y="60" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">"It’s great to have you back, Adi!</text>
+      <text x="16" y="82" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Since you're continuing your Data Engineering journey</text>
+      <text x="16" y="100" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">and prefer simple explanations, let's look at ETL Pipelines.</text>
+      <text x="16" y="122" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Think of an ETL pipeline like a restaurant kitchen..."</text>
+      <text x="16" y="140" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">Model: Gemini 3.8 Flash • Prompt Tokens: 84</text>
+    </g>
+
+    <!-- Input area mockup -->
+    <rect x="25" y="375" width="470" height="40" rx="8" fill="#020617" stroke="#334155" />
+    <text x="40" y="400" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Ask anything...</text>
+  </g>
+
+  <!-- Right: The Hindsight Memory Inspector -->
+  <g transform="translate(620, 120)" filter="url(#shadow2)">
+    <rect width="520" height="430" rx="16" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5" />
+    <rect width="520" height="50" rx="16" fill="#1e293b" />
+    <text x="25" y="32" fill="#c084fc" font-family="system-ui, sans-serif" font-size="14" font-weight="800">Hindsight Memory Inspector (Live)</text>
+    <rect x="360" y="12" width="140" height="26" rx="13" fill="#8b5cf6" fill-opacity="0.2" stroke="#8b5cf6" stroke-opacity="0.4" />
+    <text x="430" y="29" fill="#d8b4fe" font-family="monospace" font-size="10" font-weight="600" text-anchor="middle">Bank: memorydesk-user</text>
+
+    <!-- Search box -->
+    <rect x="25" y="65" width="470" height="34" rx="8" fill="#020617" stroke="#334155" />
+    <text x="40" y="87" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Filter memory bank (semantic search)...</text>
+
+    <!-- Memory Item 1 -->
+    <g transform="translate(25, 115)">
+      <rect width="470" height="60" rx="8" fill="#1e293b" stroke="#334155" />
+      <rect x="12" y="12" width="80" height="18" rx="4" fill="#3b82f6" fill-opacity="0.2" />
+      <text x="52" y="25" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="9" font-weight="700" text-anchor="middle">OBSERVATION</text>
+      <text x="100" y="25" fill="#64748b" font-family="monospace" font-size="10">user_name: Adi</text>
+      <text x="12" y="47" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12">"User's name is Adi and is learning Data Engineering."</text>
+    </g>
+
+    <!-- Memory Item 2 -->
+    <g transform="translate(25, 185)">
+      <rect width="470" height="60" rx="8" fill="#1e293b" stroke="#334155" />
+      <rect x="12" y="12" width="80" height="18" rx="4" fill="#10b981" fill-opacity="0.2" />
+      <text x="52" y="25" fill="#34d399" font-family="system-ui, sans-serif" font-size="9" font-weight="700" text-anchor="middle">PREFERENCE</text>
+      <text x="100" y="25" fill="#64748b" font-family="monospace" font-size="10">learning_style: simple</text>
+      <text x="12" y="47" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12">"Prefers simple, beginner-friendly explanations with real-world analogies."</text>
+    </g>
+
+    <!-- Memory Item 3 -->
+    <g transform="translate(25, 255)">
+      <rect width="470" height="60" rx="8" fill="#1e293b" stroke="#334155" />
+      <rect x="12" y="12" width="80" height="18" rx="4" fill="#8b5cf6" fill-opacity="0.2" />
+      <text x="52" y="25" fill="#c084fc" font-family="system-ui, sans-serif" font-size="9" font-weight="700" text-anchor="middle">EXPERIENCE</text>
+      <text x="100" y="25" fill="#64748b" font-family="monospace" font-size="10">turn_id: exp_17849</text>
+      <text x="12" y="47" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12">"Discussed introductory Python libraries and SQL databases."</text>
+    </g>
+
+    <!-- Security Isolation Notice -->
+    <g transform="translate(25, 335)">
+      <rect width="470" height="65" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.5" />
+      <text x="16" y="24" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="700">🔒 ZERO CROSS-TENANT BLEED GUARANTEE</text>
+      <text x="16" y="44" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">If user 'Alex' logs in, their bank is strictly partitioned. They will receive</text>
+      <text x="16" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">an empty clean slate with zero exposure to Adi's data engineering profile.</text>
+    </g>
+  </g>
+</svg>
